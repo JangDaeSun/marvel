@@ -1,0 +1,136 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    color: #101010;
+    font-size: 16px;
+}
+
+img {
+    display: block;
+}
+
+.mb40{
+    margin-bottom: 40px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb16{
+    margin-bottom: 16px;
+}
+.mb8{
+    margin-bottom: 8px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.test{
+    border: 1px solid red;
+}
+
+span{
+    display: inline-block;
+}
+
+section{
+    position: relative;
+}
+
+.mainbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbox:not(.intro .mainbox){
+    background: white;
+}
+.content{
+    /* margin: 1.7rem auto 0; */
+    position: relative;
+    width: 14.8rem;
+}
+
+@font-face {
+    font-family: title_r;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/titler_378e7792.ttf)
+}
+
+@font-face {
+    font-family: title_l;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/titlel_ys_fc6cf1ec.ttf)
+}
+
+@font-face {
+    font-family: title3;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/NotoSansKR-Regular_9bc92a36.ttf)
+}
+
+@font-face {
+    font-family: title4;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/NotoSansKR-SemiBold_cffe4dcd.ttf)
+}
+
+@font-face {
+    font-family: date;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/refrigeratordeluxebold_30fce753.ttf)
+}
+
+@font-face {
+    font-family: RefrigeratorDeluxeHeavy;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/RefrigeratorDeluxeHeavy_0b54d629.ttf)
+}
+
+@font-face {
+    font-family: timenum;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/time_num_0b54d629.ttf)
+}
+
+@font-face {
+    font-family: newTitle;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/FONT_NotoSansJP_SemiBold_3c5cd58e.ttf)
+}
+
+@font-face {
+    font-family: newText;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/FONT_NotoSansJP_Regular_2a77d217.ttf)
+}
+
+@font-face {
+    font-family: NunitoSans10ptCondensedMedium;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/NunitoSans10ptCondensedMedium_a1bedac6.ttf)
+}
+
+@font-face {
+    font-family: font5;
+    src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/font_corporate_logo_medium_f35e3e13.woff) format("woff")
+}
