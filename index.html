@@ -6,6 +6,8 @@
     <title>MARVEL Future Fight</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/gallery.js"></script>
 </head>
 <body>
     <section id="top">
@@ -42,17 +44,200 @@
                         <p>S.H.I.E.L.D.의 국장 닉 퓨리가 보내 온 미래로부터의 다급한 메시지-</p>
                         <p>다차원의 세계가 중첩되어 우리의 현실세계가 산산조각이 났다!</p>
                     </div>
+                    <div class="down">
+                        <p>지금 다운로드 하세요</p>
+                        <div class="link">
+                            <div class="left"><a href=""><img src="img/ko_appstore.svg" alt="애플 스토어"></a></div>
+                            <div class="right"><a href=""><img src="img/ko_googleplay.svg" alt="플레이 스토어"></a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="test">
+        <div class="features">
             <div class="mainbox">
                 <div class="content">
-                    테스트중
+                    <div>
+						<p class="title">ALLIANCE CONQUEST</p>
+						<div class="image"><img src="img/features/c_contents04.jpg"></div>
+						<p class="text">연합 간 지역 점령전! 연합원들과 힘을 합쳐 지역을 점령하고, 방어하여 1위 보상을 노려보세요!</p>
+					</div>
+					<div>
+						<p class="title">Legendary Battle</p>
+						<div class="image"><img src="img/features/c_contents05.jpg"></div>
+						<p class="text">영화 속 명장면을 게임에서도 만나자!<br>레전더리 배틀에서는 영화 속 전투신을 바탕으로 한 스테이지가 등장합니다. 누구나 참여할 수 있고 캐릭터 육성도에 따라 더 좋은 보상도 획득할 수 있습니다.</p>
+					</div>
+					<div>
+						<p class="title">Shadow Land</p>
+						<div class="image"><img src="img/features/c_contents06.jpg"></div>
+						<p class="text">다크 비스트의 힘에 사로잡힌 데어데블을 막아라! 다양한 모드로 구성된 단계 별 스테이지를 지나 최상층에 도전해보세요!</p>
+					</div>
+                    <div>
+						<p class="title">STORY MISSIONS</p>
+						<div class="image"><img src="img/features/c_contents01.jpg"></div>
+						<p class="text">마블 세계관의 또 다른 차원의 이야기-<br>오리지널 스토리와 함께 다양한 모드에서 모험을 즐기세요! <br>스토리에 따라 수백개의 다양한 미션을 클리어하고 우리의 미래를 공격한 배후의 적을 밝혀 보세요!<br></p>
+					</div>
+					<div>
+						<p class="title">ARENA</p>
+						<div class="image"><img src="img/features/c_contents02.jpg"></div>
+						<p class="text">내 히어로, 내 연합원들과 함께 최강의 드림팀을 구성하고 다른 플레이어와의 경쟁에서 승리하세요! <br>컴뱃, 블래스트, 스피드, 유니버셜 등 영웅들의 4가지 고유 속성을 활용하면 더욱 더 강해질 수 있습니다</p>
+					</div>
+					<div>
+						<p class="title">WORLD BOSS</p>
+						<div class="image"><img src="img/features/c_contents03.jpg"></div>
+						<p class="text">최강 빌런 타노스의 군대를 저지하라! <br>최고 난이도를 자랑하는 레이드 전투에서 블랙 오더를 무찌르고 진귀한 보상과 최강의 캐릭터를 획득하세요. </p>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="mainbox">
+                <div class="content">
+                    <div class="image">
+                        <img class="img1" src="img/gallery/001.jpg" alt="갤러리 이미지">
+                        <img class="img2" src="img/gallery/001.jpg" alt="갤러리 이미지">
+                    </div>
+                    <div class="title">GALLERY</div>
+                </div>
+            </div>
+        </div>
+        <div class="store">
+            <div class="mainbox">
+                <div class="content">
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/new.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/01.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">프리미엄 코믹스 카드 세공 지원 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/new.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/02.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">오딘의 영광 선택권 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/exclusive.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/03.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">(월간) 보너스 수정 100% 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/exclusive.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/04.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">(주간) 보너스 수정 70% 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/exclusive.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/05.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">(주간) 프리미엄 5,000만 골드 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/exclusive.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/06.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">(주간) 도전! C.T.P. 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/exclusive.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/07.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">(월간) 수정 15,400개 + 10,500개</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="label"><img src="img/store/exclusive.png" alt="라벨"></div>
+                            <div class="product"><img src="img/store/08.png" alt="아이템"></div>
+                            <div class="background"><img src="img/store/item_bg.png" alt="아이템 배경"></div>
+                        </div>
+                        <div class="info">
+                            <div class="title">(주간) 티어-4 재료 1,000개 선택 패키지</div>
+                            <div class="point">
+                                <img src="img/store/point.png" alt="포인트 아이콘">
+                                적립예정
+                            </div>
+                        </div>
+                        <button>구매</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="btm"></section>
+    <section id="btm">
+        <div id="footerBox" class="footer_box">
+                <div class="ft_copy_add" id="footerCopyAdd">© 2025 MARVEL © NETMARBLE CORP. &amp; DEVELOPED BY NETMARBLE MONSTER INC. 2025 ALL RIGHTS RESERVED.<br>
+                Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is service marks of Apple Inc.<br>
+                Google Play and the Google Play logo are trademarks of Google LLC.
+                    <br><br>※ 확률형 아이템 포함 
+                </div>
+
+            
+        </div>
+    </section>
 </body>
 </html>

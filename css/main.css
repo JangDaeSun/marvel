@@ -84,6 +84,9 @@ html{
 #center>div{
     position: relative;
 }
+#center>div:not(.intro){
+    background: white;
+}
 #center .intro .background{
     position: absolute;
     z-index: -1;
@@ -96,6 +99,8 @@ html{
 #center .intro .background video{
     position: fixed;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #center .intro .mainbox{
     height: 100vh;
@@ -105,6 +110,7 @@ html{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 #center .intro .mainbox .content .logo{
     width: 6.59rem;
@@ -112,4 +118,248 @@ html{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+}
+#center .intro .mainbox .content .typo{
+    color: white;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-weight: 600;
+    font-size: .28rem;
+    margin-bottom: 40px;
+}
+#center .intro .mainbox .content .down{
+    position: relative;
+    color: #FDE629;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-weight: 800;
+    font-size: .58rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#center .intro .mainbox .content .down .link{
+    width: 102%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+#center .intro .mainbox .content .down .link>div{
+    width: fit-content;
+}
+#center .intro .mainbox .content .down .link img{
+    height: 100%;
+}
+#center>div.features{
+    z-index: 10;
+    background: url(/img/content_bg.png) no-repeat center center/contain;
+    padding-top: 62%;
+    margin-bottom: -3%;
+}
+#center .features .mainbox{
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+#center .features .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 3.5%;
+    row-gap: 20px;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+}
+#center .features .content>div{
+    width: 31%;
+}
+#center .features .content .title{
+    font-size: .28rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#center .features .content .image{
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+#center .features .content .image img{
+    transition: .75s;
+}
+#center .features .content .image:hover{
+    border: 2px solid #FDE629;
+    box-shadow: 0 0 5px #FDE629;
+}
+#center .features .content .image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 10px #FDE629;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#center .features .content .image:hover::before {
+    opacity: 1;
+}
+#center .features .content .image:hover img{
+    scale: 1.1;
+}
+#center .features .content .text{
+    font-size: .20rem;
+}
+#center .gallery::before{
+    content: "";
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: url(/img/gallery_up.png);
+    background-size: 100% auto;
+    background-position: bottom;
+    bottom: -16px;
+    z-index: 2;
+}
+#center .gallery .content{
+    width: 100%;
+}
+#center .gallery .mainbox .content .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#center .gallery .mainbox .content .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#center .gallery .mainbox .content .image .img1{
+    z-index: 1;
+    position: relative;
+}
+#center .gallery .mainbox .content .image .img2{
+    z-index: 0;
+}
+#center .gallery .mainbox .content .title{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FDE629;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#center>div.store{
+    background: url(/img/store/background.jpg) no-repeat center/ cover;
+}
+#center .store .mainbox .content{
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 2%;
+    row-gap: 52px
+}
+#center .store .mainbox .content .item{
+    position: relative;
+    width: 23.5%;
+    cursor: pointer;
+}
+#center .store .mainbox .content .item .card{
+    position: relative;
+    margin-bottom: 16px;
+    transition: .4s;
+}
+#center .store .mainbox .content .item:hover .card{
+    transform: translateY(-10px);
+    box-shadow: 0 16px 20px -6px rgba(140, 139, 167, .5);
+}
+#center .store .mainbox .content .item .background img{
+    width: 100%;
+}
+#center .store .mainbox .content .item .product{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#center .store .mainbox .content .item .product img{
+    width: 80%;
+}
+#center .store .mainbox .content .item .label{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    height: 8%;
+}
+#center .store .mainbox .content .item .label img{
+    height: 100%;
+}
+#center .store .mainbox .content .item .info{
+    padding: 0 12px;
+    margin-bottom: 16px;
+}
+#center .store .mainbox .content .item .title{
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-weight: 800;
+    font-size: .24rem;
+    margin-bottom: 12px;
+    height: 48px;
+}
+#center .store .mainbox .content .item .point{
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-weight: 400;
+    font-size: .20rem;
+    border: solid #141D55;
+    border-width: 1px 0;
+}
+#center .store .mainbox .content .item .point img{
+    height: 18px;
+    margin-right: 4px;
+}
+#center .store .mainbox .content .item button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    padding: 0 10px;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-weight: 700;
+    font-size: .24rem;
+    color: white;
+    text-align: center;
+    background: #4d48f1;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+#center .store .mainbox .content .item button:hover{
+    background: #413DCD;
+}
+
+#btm{
+    background: #212121;
 }

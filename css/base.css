@@ -9,6 +9,8 @@
 }
 
 body{
+    width: 100%;
+    min-width: 1414px;
     color: #101010;
     font-size: 16px;
 }
@@ -53,13 +55,13 @@ section{
     align-items: center;
     justify-content: center;
 }
-.mainbox:not(.intro .mainbox){
-    background: white;
-}
 .content{
     /* margin: 1.7rem auto 0; */
     position: relative;
     width: 14.8rem;
+}
+.image img{
+    width: 100%;
 }
 
 @font-face {
@@ -134,3 +136,5 @@ section{
     font-family: font5;
     src: url(https://www.marvelrivals.com/pc/gw/20241203010245/font/font_corporate_logo_medium_f35e3e13.woff) format("woff")
 }
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
