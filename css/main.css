@@ -64,8 +64,8 @@ html{
 }
 #top .menu .world img{
     display: block;
-    height: .28rem;
-    width: .28rem;
+    height: .32rem;
+    width: .32rem;
 }
 #top .menu .download{
     padding-top: .08rem;
@@ -362,4 +362,41 @@ html{
 
 #btm{
     background: #212121;
+    color: #AAA;
+    text-align: center;
+    font-family: 'Pretendard Variable', pretendard, sans-serif;
+    font-size: .152rem;
+    padding-bottom: 24px;
+}
+#btm .footer{
+    position: relative;
+    width: 1200px;
+}
+#btm .logo{
+    position: absolute;
+}
+#btm .logo1{
+    left: 0;
+    top: 30px;
+}
+#btm .logo2{
+    left: 135px;
+    top: 30px;
+}
+#btm .info{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 14px;
+}
+#btm .info .left:hover, #btm .info .right:hover{
+    text-decoration: underline #AAA;
+}
+#btm .info .right{
+    font-weight: 800;
+}
+#btm .info .bar{
+    margin: 0 8px;
+}
+#btm .text{
+    padding-bottom: 14px;
 }
