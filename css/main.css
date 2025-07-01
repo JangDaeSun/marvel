@@ -78,7 +78,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/img/download_bg.png);
+    background: url(../img/download_bg.png);
 }
 
 #center>div{
@@ -152,7 +152,7 @@ html{
 }
 #center>div.features{
     z-index: 10;
-    background: url(/img/content_bg.png) no-repeat center center/contain;
+    background: url(../img/content_bg.png) no-repeat center center/contain;
     padding-top: 62%;
     margin-bottom: -3%;
 }
@@ -217,7 +217,7 @@ html{
     position: absolute;
     width: 100%;
     height: 100px;
-    background: url(/img/gallery_up.png);
+    background: url(../img/gallery_up.png);
     background-size: 100% auto;
     background-position: bottom;
     bottom: -16px;
@@ -265,7 +265,7 @@ html{
 }
 
 #center>div.store{
-    background: url(/img/store/background.jpg) no-repeat center/ cover;
+    background: url(../img/store/background.jpg) no-repeat center/ cover;
 }
 #center .store .mainbox .content{
     margin: 100px 0;
